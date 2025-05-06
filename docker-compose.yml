@@ -11,7 +11,8 @@ services:
       - db-data:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=typebot
-      - POSTGRES_PASSWORD=typebot
+      - POSTGRES_USER=danie
+      - POSTGRES_PASSWORD=daniedeklerk
 
   typebot-builder:
     image: baptistearno/typebot-builder:latest
