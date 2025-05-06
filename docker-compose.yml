@@ -19,7 +19,7 @@ services:
     depends_on:
       - typebot-db
     ports:
-      - '8080:3000'
+      - '8082:3000'
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     env_file: .env
